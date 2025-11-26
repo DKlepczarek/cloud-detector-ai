@@ -8,7 +8,7 @@
 
 > **"At sea, recognizing a Cumulonimbus 15 minutes earlier is the difference between a smooth sail and a broken mast."**
 
-## 📖 Overview
+## Overview
 **Cloud Detector AI** is a computer vision system designed to assist offshore sailors in identifying hazardous weather formations in real-time. By leveraging **Transfer Learning** and a custom **Risk-Aware Decision Engine**, the model classifies cloud types from images and provides actionable sailing advice (e.g., "Reef the sails").
 
 This project bridges the gap between **Quantitative Methods** and **Nautical Science**, addressing the critical problem of cognitive overload and human error during long offshore passages.
@@ -45,7 +45,7 @@ To simulate the unstable environment of a moving yacht, the training pipeline in
 * Rotation (`±20°`) to account for heel (przechył jachtu).
 * Zoom and Horizontal Flip.
 
-### 3. 🛡️ Safety-Critical Logic (Threshold Tuning)
+### 3. Safety-Critical Logic (Threshold Tuning)
 Standard models maximize accuracy. In safety-critical systems, **Recall** is king.
 I implemented a custom inference logic:
 ```python
@@ -54,8 +54,9 @@ if probability(Cumulonimbus) > 0.25:
     return "DANGER: Storm Imminent (Safety Override)"
 else:
     return argmax(prediction)
+```
 
-## ⚖️ License & Acknowledgments
+## License & Acknowledgments
 
 * **Code:** Released under the [MIT License](LICENSE). You are free to use, modify, and distribute this software.
 * **Data:** The dataset used for training/fine-tuning is sourced from the [CCSN Cloud Database](https://www.kaggle.com/) (or specific Kaggle link). The images belong to their respective authors and are used here solely for **educational and non-commercial purposes**.
