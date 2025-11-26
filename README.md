@@ -55,9 +55,8 @@ if probability(Cumulonimbus) > 0.25:
 else:
     return argmax(prediction)
 
----
-
 ## ⚖️ License & Acknowledgments
 
-* **Code:** Released under the [MIT License](LICENSE).
-* **Data:** The dataset used for training is sourced from [Kaggle/CCSN Database] and belongs to its respective owners. It is used here for educational and non-commercial purposes.
+* **Code:** Released under the [MIT License](LICENSE). You are free to use, modify, and distribute this software.
+* **Data:** The dataset used for training/fine-tuning is sourced from the [CCSN Cloud Database](https://www.kaggle.com/) (or specific Kaggle link). The images belong to their respective authors and are used here solely for **educational and non-commercial purposes**.
+* **Disclaimer:** This tool is intended for assistance only. Always rely on official weather forecasts and your own judgment at sea.
